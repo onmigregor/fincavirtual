@@ -1,0 +1,266 @@
+body {
+	overflow-x: hidden;
+	padding-top: 110px;
+	padding-bottom: 70px;
+}
+a:link, a:active, a:hover{text-decoration: none}
+.navbar-logo{
+	padding: 10px;
+}
+.navbar-menu-log{
+	margin-top: -8px;
+}
+.footer{
+	color: #FFFFFF;
+	margin-top:5px;
+	font-size: 12px;
+}
+#footer{
+	background-color: #0066CC;
+	border-color: #e7e7e7;
+	opacity: 0.9;
+	background:rgba(0,0,0,0.5);
+	background: -webkit-linear-gradient(right, #0066CC, #003366); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(left, #0066CC, #003366); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(left, #0066CC, #003366); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to left, #0066CC, #003366); /* Standard syntax */
+}
+#menu_abajo{
+	display: none;
+	background-color:#ffffff;
+	width:100%;
+	padding-bottom:5px;
+	padding-top:3px;
+}
+#footer:hover  #menu_abajo{
+	display: block;
+}
+
+.header_navbar{
+	background-color: #ffffff;
+	border-color: #eee;
+	opacity: 0.9;
+	background:rgba(0,0,0,0.5);
+	background: -webkit-linear-gradient(right, #ffffff, #ffffff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(left, #ffffff, #ffffff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(left, #ffffff, #ffffff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to left, #ffffff, #ffffff); /* Standard syntax */
+}
+.flash-message{
+	width:100%;
+	margin-top: 0px;
+	text-align: center;
+}
+
+/*.reloj{
+	font-size:12px;
+}
+.reloj_padding{
+	padding-top: 40px; 
+	padding-bottom: 20px;
+}*/
+
+.error {
+	border: 1px solid #b94a48!important;
+	background-color: #fee!important;
+}
+
+/*.page-header { 
+    border-bottom: 1px solid #0066CC;
+}*/
+
+/*#p {
+    background-image: url(../img/gentezoom1.png);
+	background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 5px;
+}*/
+/*ESTILOS CREADOS POR DIONY*/
+#content_header { margin-top: 108px;}
+.logo{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+/*@media only screen and (max-width: 764px) {
+	.reloj{
+		font-size:8px;
+	}
+	.reloj_padding{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}*/
+@media (min-width: 768px){
+	.navbar-reloj{
+		margin: 30px 30px 10px 0;
+		margin-right: 50px;
+	}
+	.navbar-logo{
+		padding-left: 35px;
+	}
+	body{
+		padding-top: 90px;
+	}
+	.navbar-menu-log{
+		margin-top: -18px;
+	}
+	.footer{
+		font-size: 15px;
+	}
+}
+@media (min-width: 1024px){
+	.navbar-reloj{
+		margin-top: 30px;
+	}
+	.navbar-menu-log{
+		margin-top: -13px;
+	}
+}
+
+/*
+	* Mejoras en Menu y Anexe el submenu
+	* Modificado por Diony Reveron
+	* Fecha 22-08-2016
+*/
+
+.navbar-default{
+	text-transform: uppercase;
+	font-size: 12px;
+	
+}
+.navbar-nav > li:hover { 
+	z-index: 10000;/*Coloca el menu sobre el contenido*/
+	text-transform: uppercase;
+	font-size: 12px;
+	opacity: 0.9;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(left, #e6e9f2 0%, #ebeffa 47%, #e6e9f2 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #e6e9f2), color-stop(47%, #ebeffa), color-stop(100%, #e6e9f2));
+	background: -webkit-linear-gradient(left, #e6e9f2 0%, #ebeffa 47%, #e6e9f2 100%);
+	background: -o-linear-gradient(left, #e6e9f2 0%, #ebeffa 47%, #e6e9f2 100%);
+	background: -ms-linear-gradient(left, #e6e9f2 0%, #ebeffa 47%, #e6e9f2 100%);
+	background: linear-gradient(to right, #e6e9f2 0%, #ebeffa 47%, #e6e9f2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+
+.dropdown-menu > li > a, .navbar-default .dropdown-menu > li > a{
+	font-size: 12px;
+    color: black;
+	
+} 
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+	font-size: 12px;
+	font-weight:bold;
+    color: black;
+	
+} 
+
+.dropdown-submenu {
+  position: relative;
+  
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  font-size: 12px;
+  /*height:100px;*/
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  float: right;
+  /*simple */
+  content: "?";
+  color: #cccccc;
+  /* looks a little better */
+  content: " ";
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #0066CC;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+/* Change carot color on hover */
+.dropdown-submenu:hover>a:after {
+  border-left-color: #000000;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  
+}
+
+/* change background color on hover */
+.dropdown-submenu > a:focus, .dropdown-submenu > a:hover, .dropdown-submenu:focus>a, r, .dropdown-submenu:hover>a,
+.dropdown-menu > li a:hover,
+.dropdown-menu > li a:focus {  background-color: #90d0f0; font-weight:bold; color:#000000; text-decoration: none; border: none; }
+/*clase que aplica para cambiar el color de los iconos de boosptrap para el menu*/
+.color{ color:#0066CC !important;}
+.color:hover{ color:#000000 !important;}
+.red{ color:#ff0000 !important;} 
+.red:hover{ color:#000000 !important;}
+.yellow{ color:#58D3F7 !important;} 
+.yellow:hover{ color:#000000 !important;}
+.panel {
+    border-radius: 8px;
+    /*padding-bottom: 5px;*/
+	
+}
+
+/*Agregado por Yeisy Flames  08/09/2016*/
+/*color badge*/
+.badge {
+	background-color: #337ab7;
+}
+/*margen de los input*/
+.margen-inputb {
+	margin-bottom:-10px;
+}
+/*.has-error{
+	border-style: solid;
+    border-color: #f4afa0;
+}*/
+.celda{
+height: auto;
+width: 200px;
+}
+
+.modalheader, .cerrar {
+    background-color: #337ab7;
+    color:white !important;
+    text-align: center;
+    font-size: 20px;
+}
+.modal-footer {
+    background-color: #f9f9f9;
+}
+.center{
+	text-align:center;
+}
+.right {
+	text-align:right;
+
+}
+
+.tooltip-inner {
+	max-width: 500px !important;
+	
+}
+.blue-tooltip + .tooltip > .tooltip-inner {background-color: #ffffff; border:1px solid #337ab7; color:#000000; }
+
+/*Agregado Por Diony Reveron Fecha 25-01-2017*/
+.panel-footer {
+  border-bottom-left-radius: 9px;   
+  border-bottom-right-radius: 9px; 
+}
+
